@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+a {
+    color: #f7f7a3;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo-nome {
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+.flex {
+    display: flex;
+    margin-top: 12px;
+}
+
+.logo {
+    width: 100px;
+    vertical-align: middle;
+    padding-left: 0;
+}
+/* ---------- MENU BARRA NAVEGAÇÃO -------- */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    background: #6da2bb;
+    height: 8vh;
+}
+
+/* Referente as uls */
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+/* Referente a responsividade EM APARELHOS MOBILE */
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #e6e697;
+    margin: 8px;
+}
+
+/*(RESPONSIVIDADE) MENU HAMBURHUER APARECENDO NA LATERAL DO SITE QUANDO ATINGIR DETERMINADO TAMANHO*/
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #6da2bb;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+
+    }
+    .mobile-menu {
+        display: block;
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0)
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+body {
+    font-family:"poppins", sans-serif; /* Exemplo de fonte para corpo de texto */
+    margin: 0;
+    padding: 0;
+    background-color: #a2ba82;
+  }
+
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .sobre-nos {
+    margin-top: 80px;
+  }
+
+  .container {
+    display: flex;
+    max-width: 1600px;
+    margin: auto;
+    justify-content: space-between;
+  }
+
+  .historia-text,.historia-img {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  flex-direction: column; 
+  height: 550px;
+  width: 50%; 
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+  }
+
+  .historia-text {
+    font-family: "poppins" sans-serif;
+    font-size: 20px;
+    background-color: #dbf5d3; 
+    padding: 20px; 
+    object-fit: cover;
+    overflow: hidden;
+    text-align: justify;
+    margin-right: 30px;
+  }
+
+  .historia-img {
+    overflow: hidden;
+    background-color: rgb(229, 108, 56);
+    margin-left: 30px;
+  }
+
+  .historia-img img {
+    object-fit: cover; 
+    width: 100%; 
+    height: auto; 
+  }
+
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h2.titulo {
+    text-align: center;
+    font-size: 2.5em; /* Ajuste o tamanho da fonte */
+    margin-bottom: 40px;
+  }
+  
+  .tripla-coluna {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .bloco1, .bloco2, .bloco3 {
+    flex: 1;
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5; /* Cor de fundo */
+  }
+  
+  .bloco1 h2, .bloco2 h2, .bloco3 h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333; /* Cor do título */
+  }
+  
+  .bloco1 p, .bloco2 p, .bloco3 p {
+    line-height: 1.6;
+    color: #666; /* Cor do texto */
+  }
+  
+  .valor {
+    flex: 1;
+    width: 50%;
+    padding: 10px;
+  }
+  
+  /* Media query para tablets */
+  @media (max-width: 768px) {
+    .tripla-coluna {
+      flex-direction: column; /* Ajusta o layout para coluna */
+    }
+  
+    .bloco1, .bloco2, .bloco3 {
+      width: 100%; /* Blocos ocupam largura total */
+    }
+  }
+
+/*container missão, visão e valores*/
+.mvv-container {
+  max-width: 90%;
+  margin: 150px auto 0;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-color: #fdf8eb;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+
+.mvv-container .mvv-bloco {
+  font-family: 'poppins', sans-serif;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.mvv-container .mvv-bloco .image {
+  flex: 0 0 400px;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.mvv-container .mvv-bloco .image img {
+  width: 500px;
+  transition: .3s;
+  transform: scale(1);
+}
+
+.mvv-container .mvv-bloco .image:hover img {
+  transform: scale(1.05);
+}
+
+.mvv-container .mvv-bloco .content {
+  flex: 1 1 auto;
+  width: calc(100% - 400px);
+  box-sizing: border-box;
+  align-self: center;
+}
+
+.mvv-container .mvv-bloco .content h2 {
+  font-weight: 700;
+  font-size: 25px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.mvv-container .mvv-bloco .content h4 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.mvv-container .mvv-bloco .content p {
+  font-size: 22px;
+  justify-content: space-around;
+  text-align:justify;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .mvv-container .mvv-bloco:nth-child(odd) .image {
+    order: 1;
+  }
+  .mvv-container .mvv-bloco:nth-child(even) .image {
+    order: 2;
+  }
+  .mvv-container .mvv-bloco:nth-child(odd) .content {
+    order: 2;
+    padding-left: 30px;
+  }
+  .mvv-container .mvv-bloco:nth-child(even) .content {
+    order: 1;
+    padding-right: 70px;
+  }
+}

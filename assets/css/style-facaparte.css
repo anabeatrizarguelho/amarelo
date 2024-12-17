@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color:  #f7f7a3;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo-nome {
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+.flex {
+    display: flex;
+    margin-top: 12px;
+}
+
+.logo {
+    width: 100px;
+    vertical-align: middle;
+    padding-left: 0;
+}
+
+/* ---------- MENU BARRA NAVEGAÇÃO -------- */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Poppins" , sans-serif;
+    background: #6da2bb;
+    height: 8vh;
+}
+
+/* Referente as uls */
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+/* Referente a responsividade EM APARELHOS MOBILE */
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #e6e697;
+    margin: 8px;
+}
+
+/* ----------(RESPONSIVIDADE) MENU HAMBURHUER APARECENDO NA LATERAL DO SITE QUANDO ATINGIR DETERMINADO TAMANHO----------- */
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+body, html {
+    overflow-x: hidden !important;
+    }
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    height: 93vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+
+form {
+    font-family: "Poppins", sans-serif;
+}
+
+.tittle {
+    margin-bottom: -2rem;
+}
+
+.form-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #81b85f;
+    padding: 1rem;
+}
+
+.form-image img {
+    width:29rem;
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    padding: 3rem;
+}
+
+
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background: #81b85f;
+    margin: 0;
+    position: static;
+    border-radius: 10px;
+}
+
+
+.continue-button-cor {
+    color: #051c00;
+
+}
+
+.input-group {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px #00001c;
+    font-family: "poppins", sans-serif;
+}
+
+.input-box input:hover {
+    background: #d8d2c9;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #81b85f;
+}
+
+.input-box label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000000c0
+}
+
+.input-box input::placeholder {
+    color: #000000be;
+
+}
+
+.continue-button {
+    margin-top: -1rem;
+}
+
+.continue-button button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-right: 29rem;
+    border: none;
+    background: #81b85f;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+.continue-button button:hover {
+    background: #385532;
+}
+
+.continue-button button a {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+select{
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    padding-right: 6.5rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px #33334a;
+  }
+
+#chamada {
+    padding-top: 2rem;
+}
+
+h2 {
+    font-size: 16px;
+}

@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color:  #f7f7a3;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo-nome {
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+.flex {
+    display: flex;
+    margin-top: 12px;
+}
+
+.logo {
+    width: 100px;
+    vertical-align: middle;
+    padding-left: 0;
+}
+
+/* ---------- MENU BARRA NAVEGAÇÃO -------- */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Poppins" , sans-serif;
+    background: #6da2bb;
+    height: 8vh;
+}
+
+/* main {
+    background: url("logo.png") no repeat center center;
+    background-size:  cover;
+    height: 92vh;
+} */
+
+/* Referente as uls */
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+/* Referente a responsividade EM APARELHOS MOBILE */
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #e6e697;
+    margin: 8px;
+}
+
+/* body {
+    background: #f5f1e8d9;
+} */
+
+
+/* ----------(RESPONSIVIDADE) MENU HAMBURHUER APARECENDO NA LATERAL DO SITE QUANDO ATINGIR DETERMINADO TAMANHO----------- */
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ---------- CADASTRO ------------ */
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    height: 93vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+
+form {
+    font-family: "Poppins", sans-serif;
+    
+}
+
+.form-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #6da2bb;
+    padding: 1rem;
+}
+
+.form-image img {
+    width:29rem;
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    padding: 3rem;
+}
+
+
+.form-header {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+}
+
+.login-button button {
+    font-family: "Poppins";
+    font-weight: 600;
+    border: none;
+    background: #6da2bb;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button button:hover {
+    background: #e6e697;
+}
+
+.login-button button a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #00001c;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background: #6da2bb;
+    margin: 0 ;
+    position: static;
+    border-radius: 10px;
+}
+
+.login-cor {
+    color: #00001c;
+}
+
+.continue-button-cor {
+    color: #00001c;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control input {
+    margin: 0.5rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px #00001c;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+}
+
+.form-control input:hover {
+    background: #eeeeee75;
+}
+
+.form-control input:focus-visible {
+    outline: 1px solid #6da2bb;
+}
+
+.form-control label, .genero-titulo h6 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.genero-titulo h6 {
+    margin-top: -0.2rem;
+}
+
+.form-control input::placeholder {
+    color: #000000be;
+
+}
+
+.genero-grupo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.15rem;
+    padding: 0 0.5rem;
+}
+
+.genero-input {
+    display: flex;
+    align-items: center;
+}
+
+.genero-input input {
+    margin-right: 0.35rem;
+}
+
+.genero-input label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.continue-button button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 1rem;
+    border: none;
+    background: #6da2bb;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue-button button:hover {
+    background: #e6e697;
+}
+
+.continue-button button a {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+
+/* ------------ VALIDAÇÃO ------ */
+span {
+    color:#db5a5a;
+    font-size: 12px;
+    margin-top: 0.01rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}

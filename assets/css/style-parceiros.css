@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+a {
+    color:  #f7f7a3;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo-nome {
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+.flex {
+    display: flex;
+    margin-top: 12px;
+}
+
+.logo {
+    width: 100px;
+    vertical-align: middle;
+    padding-left: 0;
+}
+
+/* ---------- MENU BARRA NAVEGAÇÃO -------- */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Poppins" , sans-serif;
+    background: #6da2bb;
+    height: 8vh;
+}
+
+/* main {
+    background: url("logo.png") no repeat center center;
+    background-size:  cover;
+    height: 92vh;
+} */
+
+/* Referente as uls */
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+/* Referente a responsividade EM APARELHOS MOBILE */
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #e6e697;
+    margin: 8px;
+}
+
+.titulo-parceiros {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    color: #6da2bb;
+    margin: 50px;
+}
+
+body {
+    background: #f5f1e8d9;
+}
+
+.container-parceiros {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    border: 3px solid #6da2bb;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px #0000004d;
+    height: 15rem;
+    width: 35rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    transition: all .5s ease;
+}
+
+.container-parceiros:hover {
+    color: #001F3F;
+    background-color: #e6e697;
+}
+
+.conteudo-parceiros {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    font-size: 20px;
+    color: #2E2E2E;
+}
+
+span {
+    font-weight: 600;
+    color: #434342;
+}
+
+
+/* ----------(RESPONSIVIDADE) MENU HAMBURHUER APARECENDO NA LATERAL DO SITE QUANDO ATINGIR DETERMINADO TAMANHO----------- */
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #6da2bb;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+
+    }
+    .mobile-menu {
+        display: block;
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0)
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

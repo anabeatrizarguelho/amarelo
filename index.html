@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <title>amarElo</title>
+
+    <!-- LINK CARROSSEL DEPOIMENTOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"/>
+    <!-- ASPAS DE CITAÇÃO -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+    <link rel="stylesheet" href="assets/css/style-home.css">
+    <link rel="stylesheet" href="assets/css/responsivo-home.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- LOGO -->
+            <div class="flex">
+                <a href="index.html"><img src="assets/img/logo.png" width="70px"></a>
+            </div>
+            <a class="logo-nome" href="index.html">amarElo</a>
+            <!-- BOTÃO DE OPÇÕES APARECENDO QUANDO A JANELA É DIMINUIDA -->
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+                <!-- ITENS DO MENU NAVEGAÇÃO -->
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="quemsomos.html">Quem somos</a></li>
+                <li><a href="parceiros.html">Parceiros</a></li>
+                <li><a href="faca-parte.html">Faça parte</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="cabecalho">
+            <h2>SEJA BEM VINDO</h2>
+            <p>Não seja o produto de suas circunstâncias, mas sim o resultado de suas decisões. Para hoje escolha cuidar mais de você.</p>
+            <a href="cadastro.html"><button>Encontrar ajuda</button></a>
+        </div>
+    </main>
+    <section class="depoimento-area">
+        <div class="conteudo">
+            <div class="seg-titulo">
+                <h2>Você não está sozinho...</h2>
+            </div>
+            <div class="testimonial-content owl-carousel">
+                <div class="depoimento-unico">
+                    <p>Encontrei a luz no fim do tunel quando procurei ajuda. Não tenha medo de dar esse passo. A recuperação é um processo, e buscar ajuda é o início. Acredite que você pode superar.</p>
+                    <div class="pessoa-info">
+                        <div class="pessoa-foto">
+                            <img src="assets/img/account (64).png">
+                        </div>
+                        <div class="pessoa-detalhe">
+                            <h6>Marina Souza</h6>
+                            <span>Rio de Janeiro, RJ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="depoimento-unico">
+                    <p>Buscar tratamento foi um ato de coragem e amor próprio. Você merece o mesmo cuidado. Pois ele me deu ferramentas para enfrentar meus medos. Não tenha medo de pedir ajuda.</p>
+                    <div class="pessoa-info">
+                        <div class="pessoa-foto">
+                            <img src="assets/img/account (64).png">
+                        </div>
+                        <div class="pessoa-detalhe">
+                            <h6>Estevan Castro</h6>
+                            <span>Rio de Janeiro, RJ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="depoimento-unico">
+                    <p>A ansiedade não define quem você é. Buscar tratamento foi o primeiro passo para a liberdade. A terapia salvou minha vida. Não hesite em buscar o apoio que você merece.</p>
+                    <div class="pessoa-info">
+                        <div class="pessoa-foto">
+                            <img src="assets/img/account (64).png">
+                        </div>
+                        <div class="pessoa-detalhe">
+                            <h6>Luíza Santos</h6>
+                            <span>Rio de Janeiro, RJ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="ligue">
+        <p>Em caso de emergência ou se você precisar de apoio imediato, por favor, ligue:</p>
+    </div>
+    <!-- TELEFONES DE URGENCIA -->
+
+    <div class="num-urgencia" >
+        <div>
+            <ul>
+                <li class="emergencia-num">188</li>
+                <li class="emergencia-nome">CVV</li>
+                <p class="explicacao">Se você ou alguém que você conhece está tendo pensamentos suícidas e precisa conversar.</p>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li class="emergencia-num">190</li>
+                <li class="emergencia-nome">POLÍCIA</li>
+                <p class="explicacao">Se a situação envolver perigo iminente de violência ou a necessidade de uma intervenção policial.</p>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li class="emergencia-num">192</li>
+                <li class="emergencia-nome">SAMU</li>
+                <p class="explicacao">Em casos de tentativa de suicídio, especialmente se a pessoa estiver em perigo imediato ou inconsciente.</p>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li class="emergencia-num">193</li>
+                <li class="emergencia-nome">BOMBEIROS</li>
+                <p class="explicacao">Tentativa de suicídio em locais de difícil acesso, com uso de substâncias perigosas.</p>
+            </ul>
+        </div>
+    </div>
+
+    <!-- USANDO CDN LINK -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.testimonial-content').owlCarousel({
+            loop:true,
+            nav:false,
+            dots:true,
+            margin:50,
+            autoplay:true,
+            autoplayTimeout:4000,
+            smartSpeed:800,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:2
+                }
+            }
+        })
+        })
+    </script>
+    <!-- FIM DO CDN LINK -->
+    
+    <script src="assets/js/mobile-navbar.js"></script>
+</body>
+
+</html>

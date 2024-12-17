@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <title>amarElo | Faça parte</title>
+
+    <link rel="stylesheet" href="assets/css/style-facaparte.css">
+    <link rel="stylesheet" href="assets/css/responsivo-facaparte.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="flex">
+                <a href="index.html"><img src="assets/img/logo.png" width="70px"></a>
+            </div>
+            <a class="logo-nome" href="index.html">amarElo</a>
+            <!-- BOTÃO HAMBURGUER -->
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="quemsomos.html">Quem somos</a></li>
+                <li><a href="parceiros.html">Parceiros</a></li>
+                <li><a href="faca-parte.html">Faça parte</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <div class="container">
+            <div class="form-image">
+                <img src="assets/img/parceiros.png" alt="">
+            </div>
+                
+            <div class="form">
+                <form action="" method="post" onsubmit="return validateForm()">
+                    <div class="form-header">
+                        <div class="tittle">
+                            <h1>Faça parte</h1>
+                            <h2 id="chamada">Se você é psicólogo ou terapeuta e compartilha da nossa missão,
+                            preencha seus dados abaixo para se candidatar e fazer parte da nossa equipe.</h2>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-box">
+                            <label for="fullname">Nome</label>
+                            <input id="fullname" type="text" name="fullname" placeholder="Digite seu nome completo" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="cpf">CPF/CNPJ</label>
+                            <input id="cpf" type="text" name="cpf" placeholder="000.000.000-00" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="email">E-mail</label>
+                            <input id="email" type="text" name="email" placeholder="Digite seu email" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="number">Celular</label>
+                            <input type="tel" id="number" name="number" placeholder="(xx) xxxxx-xxxx" required>
+                        </div> 
+
+                        <div class="input-box">
+                            <label for="cep">CEP</label>
+                            <input type="text" id="cep"  name="cep" placeholder="Digite seu CEP" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="endereco">Endereço</label>
+                            <input type="text" id="rua"  name="rua">
+                        </div>
+
+                        <div class="input-box">
+                            <label for="bairro">Bairro</label>
+                            <input type="text" id="bairro"  name="bairro">
+                        </div>
+
+                        <div class="input-box">
+                            <label for="num">Número</label>
+                            <input type="text" id="num"  name="num" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="especialidade">Especialidade</label>
+                            <select id="especialidades">
+                                <option value="psicologo">Psicólogo</option>
+                                <option value="terapeuta">Terapeuta</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="continue-button">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/mobile-navbar.js"></script>
+    <script src="assets/js/validaCep-facaparte.js"></script>
+    <script src="assets/js/formulario-facaparte.js"></script>
+</body>
+</html>
